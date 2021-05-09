@@ -1,0 +1,43 @@
+.col-text{
+    align-items: center;
+    padding-top: 150px;
+}
+
+img{
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
+}
+
+/*My Resume Button*/
+.btn, .btn:hover {
+    margin-top: 25px;
+}
+
+.btn {
+    background: #E91E63;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    border-color: violet;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: pink;
+    color: #E91E63;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.2),
+    0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-center {
+    min-height: 100%;  
+    min-height: 100vh; 
+  
+    display: flex;
+    align-items: center;
+}
