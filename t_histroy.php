@@ -45,11 +45,10 @@
     <!-- Transaction Histroy Table Start -->
     <div class="container">
         <?php
-            error_reporting(0);
 
             include("connection.php");
 
-            $query = "select * from transaction_histroy";
+            $query = "select * from transaction_history";
             $data = mysqli_query($conn, $query);
 
             $total = mysqli_num_rows($data);

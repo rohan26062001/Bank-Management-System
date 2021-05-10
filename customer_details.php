@@ -112,12 +112,12 @@
             // echo "Amount:".$amount."\n";
             
             //For Sender Data
-            $sql1 = "SELECT * from userlist where Name=$from";
+            $sql1 = "SELECT * FROM userlist WHERE Name='$from'";
             $query1 = mysqli_query($conn, $sql1);
             $sql1 = mysqli_fetch_assoc($query1);
 
             //For Receiver Data
-            $sql2 = "SELECT * from userlist where Name=$to";
+            $sql2 = "SELECT * FROM userlist WHERE Name='$to'";
             $query2 = mysqli_query($conn, $sql2);
             $sql2 = mysqli_fetch_assoc($query2);
 
@@ -146,18 +146,18 @@
 
                 // Deducting amount from sender's account
                 $newbalance1 = $sql1['Balance'] - $amount;
-                $sql = "UPDATE userlist set Balance=$newbalance1 where Name=$from";
+                $sql = "UPDATE userlist SET Balance=$newbalance1 WHERE Name='$from'";
                 mysqli_query($conn, $sql);
 
 
                 // Adding amount to reciever's account
                 $newbalance2 = $sql2['Balance'] + $amount;
-                $sql = "UPDATE userlist set Balance=$newbalance2 where Name=$to";
+                $sql = "UPDATE userlist SET Balance=$newbalance2 WHERE Name='$to'";
                 mysqli_query($conn, $sql);
 
-                $sender = $sql1['Name'];
-                $receiver = $sql2['Name'];
-                $sql = "INSERT INTO transaction_history(`From Account Of`, `To Account Of`, `Amount`) VALUES ('$sender','$receiver','$amount')";
+                $sender = $from;
+                $receiver = $to;
+                $sql = "INSERT INTO `transaction_history`(`From Account Of`, `To Account Of`, `Amount`) VALUES ('$sender','$receiver','$amount')";
                 $query = mysqli_query($conn, $sql);
 
                 if ($query) {
