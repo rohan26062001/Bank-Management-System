@@ -25,7 +25,7 @@
     <!-- Icon Library -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
 
-    <title>Basic Banking System</title>
+    <title>Bank Management System</title>
 </head>
 <style>
     body {

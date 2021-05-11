@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Basic Banking System</title>
+    <title>Bank Management System</title>
 </head>
 <body>
     <!-- Navbar Start -->
@@ -40,7 +40,7 @@
 
     <!-- Main Row Start -->
     <div class="jumbotron vertical-center">
-        <div class="container">
+        <div class="container p-3">
             <div class="row text-center">
                 <div class="col-md-6 col-12">
                     <img src="images/user.png" alt="user" style="border-radius: 50%;"><br><br>

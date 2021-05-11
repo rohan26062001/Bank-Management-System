@@ -17,11 +17,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Basic Banking System</title>
+    <title>Bank Management System</title>
 </head>
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
         <a class="navbar-brand" href=""><i class="fas fa-university"></i> Basic Bank of India</a>
         <ul class="navbar-nav ">
             <li class="nav-item active">
