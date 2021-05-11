@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,20 +20,11 @@
 
     <title>Basic Banking System</title>
 </head>
-<style>
-    body{
-        overflow-y: hidden;
-    }
-</style>
 <body>
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
         <a class="navbar-brand" href=""><i class="fas fa-university"></i> Basic Bank of India</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ">
+        <ul class="navbar-nav ">
             <li class="nav-item active">
                 <a class="nav-link" href="index.php">Home</a>
             </li>
@@ -42,8 +34,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLScXdRJOTr5plyjinjUWOdkRNxCi-NzL2V_qO99H1pXKhXpImQ/viewform?usp=sf_link">Contact</a>
             </li>
-            </ul>
-        </div>
+        </ul>
     </nav>
     <!-- Navbar End -->
 
@@ -53,7 +44,7 @@
             <div class="row text-center">
                 <div class="col-md-6 col-12">
                     <img src="images/user.png" alt="user" style="border-radius: 50%;"><br><br>
-                    <a href="all-users.php" class="btn btn-primary">View All Customers</a>
+                    <a href="all-users.php" class="btn btn-primary">View All Customers</a><br><br>
                 </div>
                 <div class="col-md-6 col-12">
                     <img src="images/history.jpg" alt="history" style="border-radius: 50%;"><br><br>
@@ -64,4 +55,5 @@
     </div>
     <!-- Main Row End -->
 </body>
+
 </html>
